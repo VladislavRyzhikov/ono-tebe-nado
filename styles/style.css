@@ -1,0 +1,67 @@
+
+.page {
+   margin: 0 auto;
+   max-width: 1440px; 
+}
+
+.header {
+    margin: 92px 49px 92px 51px;
+    max-width: 1340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__links-list {
+    min-width: 388px;
+    display: flex;
+    justify-content: space-between;
+    list-style: circle;
+}
+
+.header__links-list-item:first-of-type {
+    list-style: none;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;    
+}
+
+.header_link_active {
+    border-bottom: 1px solid black;
+}
+
+/* Логотип позицианирован относительно себя */
+.header__logo {
+    display: block;
+    background-image: url(../images/logo-black.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 145px;
+    height: 105px;
+    position: relative;
+    right: 70px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.addres__link {
+    width: max-content;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px; /* 135% */ 
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.addres__location {
+    max-width: 240px;
+    border: 0;
+}
