@@ -1,9 +1,8 @@
-
 .page {
-   margin: 0 auto;
-   max-width: 1440px; 
+    margin: 0 auto;
+    max-width: 1440px;
 }
-
+/* Стили header */
 .header {
     margin: 92px 49px 92px 51px;
     max-width: 1340px;
@@ -13,9 +12,9 @@
 }
 
 .header__links-list {
-    display: flex;
-    gap: 33px;
     list-style: circle;
+    display: flex;
+    gap: 33px; 
 }
 
 .header__links-list-item:first-of-type {
@@ -27,7 +26,7 @@
     color: #000;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.2;    
+    line-height: 1.2;
 }
 
 .link_active {
@@ -46,6 +45,7 @@
     right: 70px;
 }
 
+/* Секция с адрессом */
 .address {
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@
     width: max-content;
     font-size: 18px;
     font-weight: 400;
-    line-height: 24.3px; /* 135% */ 
+    line-height: 24.3px;
     text-decoration: none;
     border-bottom: 1px solid black;
 }
@@ -65,7 +65,96 @@
     border: 0;
 }
 
- .overlay {
+/* Блок секция cover*/
+.cover {
+    position: relative;
+    margin-bottom: 180px;
+    width: 100%;
+    min-height: 757px;
+    background-image: url(../images/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.cover__title {
+    padding: 165px 0 130px 0;
+    margin: 0 auto;
+    max-width: 1340px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cover__letter {
+    color: #FFF;
+    font-size: 100px;
+    letter-spacing: 25px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.aligned-text {
+    align-self: self-start;
+}
+
+.aligned-text_center {
+    align-self: center;
+    margin-left: -65px;
+ 
+}
+
+
+.aligned-text_right {
+    align-self: self-end;
+}
+
+.letter-spasing-extended {
+    letter-spacing: 50px;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0px;
+}
+
+.cover__description {
+    margin: 0 auto;
+    max-width: 1340px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 78px;
+}
+
+.cover__description-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 18px;
+}
+
+.bet-button {
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    width: 257px;
+    height: 52px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Оверлэй один для двух блоков */
+.overlay {
     width: 100%;
     height: 100%;
     background-color: rgba(000, 000, 000, 0.6);
@@ -74,9 +163,9 @@
     right: 0;
     bottom: 0;
     position: absolute;
-} 
+}
 
-
+/* Блок секция lots  */
 .lots {
     margin: 0 auto 191px auto;
     max-width: 1340px;
@@ -86,19 +175,20 @@
 .lots__heading {
     font-size: 40px;
     font-weight: 700;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     margin: 0 0 25px 40px;
-}  
+}
 
 .lots__card-list {
+    margin-bottom: 30px;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    margin-bottom: 30px;
+    
 }
 
-.lots__card-list-item {
+.lots__card {
     position: relative;
     width: 430px;
     height: 450px;
@@ -115,7 +205,7 @@
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-} 
+}
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
@@ -131,7 +221,7 @@
     font-weight: 700;
     line-height: 120%;
     z-index: 1;
-    
+
 }
 
 .card-link {
@@ -143,19 +233,19 @@
     color: #FFF;
     font-size: 20px;
     font-weight: 400;
-    line-height: 120%; 
+    line-height: 120%;
     z-index: 1;
 }
 
 .lots__look-more-link {
     font-size: 20px;
-    font-weight: 400; 
+    font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
     border-bottom: 1px solid black;
 }
 
-
+/* Блок секция about */
 .about {
     margin: 0 auto 180px auto;
     max-width: 1340px;
@@ -195,17 +285,16 @@
 
 .about__title {
     margin-bottom: 100px;
-    color: #000;
     font-size: 40px;
     font-weight: 700;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .about__text {
     font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
-    line-height: 1.2; 
+    line-height: 1.2;
 }
 
 .about__text-list {
@@ -220,6 +309,7 @@
     margin: 0;
 }
 
+/* Блок секция footer */
 .footer {
     margin: 0 auto 90px auto;
     max-width: 1340px;
