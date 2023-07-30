@@ -19,7 +19,7 @@
     gap: 33px;
 }
 
-.header__links_no-circle {
+.header__links_no-bullit {
     list-style: none;
 }
 
@@ -114,25 +114,19 @@
 .aligned-text {
     display: block;
     width: 100%;
-    text-align: left;
     z-index: 1;
 }
 
 .aligned-text_center {
-    display: block;
-    width: 100%;
     text-align: center;
-    z-index: 2;
 }
 
 .aligned-text_right {
-    display: block;
-    width: 100%;
     text-align: right;
-    z-index: 3;
 }
 
 
+/* Увидел рекомендаци использовать em, но к сожалению еще не совсем хорошо разобрался в относительных еденицах измерения, обещаю разобраться и прибегнуть к рекомендации */
 .letter-spacing-extended {
     letter-spacing: 60px;
 }
@@ -141,6 +135,7 @@
     letter-spacing: 0;
 }
 
+/* Увидел рекомендаци использовать em, но к сожалению еще не совсем хорошо разобрался в относительных еденицах измерения, обещаю разобраться и прибегнуть к рекомендации */
 .letter-spacing-for-all {
     letter-spacing: 30px;
 }
@@ -213,6 +208,7 @@
 .lots__heading {
     font-size: 40px;
     font-weight: 700;
+    line-height: 120%;
     text-transform: uppercase;
     margin: 0 0 28px 40px;
 }
@@ -345,7 +341,7 @@
     padding: 104px 0 97px 0;
     font-size: 40px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 120%;
     text-transform: uppercase;
 }
 
@@ -359,7 +355,7 @@
 .about__paragraph {
     font-size: 20px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 120%;
 }
 
 
@@ -381,7 +377,7 @@
 .footer__menu-link {
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 120%;
     text-decoration: none;
     transition: all 0.2s;
 }
